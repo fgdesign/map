@@ -83,9 +83,9 @@ function initialize() {
     function toggleLayers(i) {
 
         if (layers[i].getMap() == null) {
-            layers[i].setMap(map);
-        } else {
             layers[i].setMap(null);
+        } else {
+            layers[i].setMap(map);
         }
         google.maps.event.addListener(layers[i], 'status_changed', function () {
 
