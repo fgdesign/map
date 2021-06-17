@@ -317,7 +317,7 @@ function initialize() {
         // toggle layers at the beginning
     function toggleLayers(i) {
 
-        if (layers[i].getMap() === null) {
+        if (layers[i].getMap() == null) {
             layers[i].setMap(map);
         } else {
             layers[i].setMap(null);
